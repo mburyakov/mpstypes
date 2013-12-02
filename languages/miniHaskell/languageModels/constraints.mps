@@ -28,5 +28,14 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2235017226268217876" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="56yg.2235017226265953245" resolveInfo="VariableReference" />
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2235017226268217935" nodeInfo="ng">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="56yg.2235017226265953246" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="2235017226268217939" nodeInfo="ng">
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.2235017226265919934" resolveInfo="VariableDeclaration" />
+      </node>
+    </node>
+  </root>
 </model>
 
