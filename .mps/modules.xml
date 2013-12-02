@@ -4,7 +4,6 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/miniHaskell/miniHaskell.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/sandbox/sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/hsTypes.build/hsTypes.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
