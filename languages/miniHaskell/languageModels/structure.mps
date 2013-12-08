@@ -304,7 +304,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="type" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8343410428556353411" resolveInfo="IType" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8343410428555802398" resolveInfo="PolymorphicType" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226268025502" nodeInfo="ig">

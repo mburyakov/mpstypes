@@ -226,8 +226,10 @@
             <property name="name" nameId="tpck.1169194664001" value="b" />
           </node>
           <node role="body" roleId="56yg.2235017226265963751" type="56yg.TypeAnnotatedExpression" typeId="56yg.2235017226267859273" id="2235017226268024514" nodeInfo="ng">
-            <node role="type" roleId="56yg.2235017226267859331" type="56yg.DataReference" typeId="56yg.2235017226267344686" id="2235017226268024592" nodeInfo="ng">
-              <link role="declaration" roleId="56yg.2235017226267344687" targetNodeId="2235017226267386419" resolveInfo="Bool" />
+            <node role="type" roleId="56yg.2235017226267859331" type="56yg.PolymorphicType" typeId="56yg.8343410428555802398" id="5838774196615812192" nodeInfo="ng">
+              <node role="body" roleId="56yg.8343410428555802600" type="56yg.DataReference" typeId="56yg.2235017226267344686" id="5838774196615812368" nodeInfo="ng">
+                <link role="declaration" roleId="56yg.2235017226267344687" targetNodeId="2235017226267386419" resolveInfo="Bool" />
+              </node>
             </node>
             <node role="expression" roleId="56yg.2235017226267859329" type="56yg.CaseExpression" typeId="56yg.2235017226267437056" id="2235017226267805731" nodeInfo="ng">
               <node role="expression" roleId="56yg.2235017226267437094" type="56yg.FunctionApplication" typeId="56yg.2235017226265963491" id="2235017226267805899" nodeInfo="ng">
