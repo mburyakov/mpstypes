@@ -32,12 +32,27 @@
     </node>
     <node role="declarations" roleId="56yg.2235017226265963342" type="56yg.VariableDeclaration" typeId="56yg.2235017226265919934" id="2235017226267386431" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="id" />
-      <node role="value" roleId="56yg.2235017226265953267" type="56yg.Lambda" typeId="56yg.2235017226265953242" id="2235017226267386440" nodeInfo="ng">
-        <node role="variable" roleId="56yg.2235017226265963749" type="56yg.LambdaVariableDeclaration" typeId="56yg.2235017226265953243" id="2235017226267386442" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="x" />
+      <node role="value" roleId="56yg.2235017226265953267" type="56yg.TypeAnnotatedExpression" typeId="56yg.2235017226267859273" id="8343410428562459773" nodeInfo="ng">
+        <node role="type" roleId="56yg.2235017226267859331" type="56yg.PolymorphicType" typeId="56yg.8343410428555802398" id="8343410428562459791" nodeInfo="ng">
+          <node role="body" roleId="56yg.8343410428555802600" type="56yg.FunctionType" typeId="56yg.5813829640768402492" id="8343410428562459799" nodeInfo="ng">
+            <node role="from" roleId="56yg.5813829640768402556" type="56yg.TypeParameterReference" typeId="56yg.2235017226267412288" id="8343410428562459808" nodeInfo="ng">
+              <link role="declaration" roleId="56yg.2235017226267412289" targetNodeId="8343410428562459797" resolveInfo="a" />
+            </node>
+            <node role="to" roleId="56yg.5813829640768402558" type="56yg.TypeParameterReference" typeId="56yg.2235017226267412288" id="8343410428562459810" nodeInfo="ng">
+              <link role="declaration" roleId="56yg.2235017226267412289" targetNodeId="8343410428562459797" resolveInfo="a" />
+            </node>
+          </node>
+          <node role="variables" roleId="56yg.8343410428555802598" type="56yg.TypeParameter" typeId="56yg.2235017226267394657" id="8343410428562459797" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="a" />
+          </node>
         </node>
-        <node role="body" roleId="56yg.2235017226265963751" type="56yg.LambdaVariableReference" typeId="56yg.2235017226265953244" id="2235017226267386449" nodeInfo="ng">
-          <link role="declaration" roleId="56yg.2235017226265963635" targetNodeId="2235017226267386442" resolveInfo="x" />
+        <node role="expression" roleId="56yg.2235017226267859329" type="56yg.Lambda" typeId="56yg.2235017226265953242" id="2235017226267386440" nodeInfo="ng">
+          <node role="variable" roleId="56yg.2235017226265963749" type="56yg.LambdaVariableDeclaration" typeId="56yg.2235017226265953243" id="2235017226267386442" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="x" />
+          </node>
+          <node role="body" roleId="56yg.2235017226265963751" type="56yg.LambdaVariableReference" typeId="56yg.2235017226265953244" id="2235017226267386449" nodeInfo="ng">
+            <link role="declaration" roleId="56yg.2235017226265963635" targetNodeId="2235017226267386442" resolveInfo="x" />
+          </node>
         </node>
       </node>
     </node>
