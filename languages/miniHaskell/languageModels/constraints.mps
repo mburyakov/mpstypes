@@ -33,7 +33,7 @@
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2235017226268217935" nodeInfo="ng">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="56yg.2235017226265953246" />
       <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="2235017226268217939" nodeInfo="ng">
-        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.2235017226265919934" resolveInfo="VariableDeclaration" />
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.6407929488696230591" resolveInfo="IVariableDeclaration" />
       </node>
     </node>
   </root>
