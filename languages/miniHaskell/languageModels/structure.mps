@@ -47,6 +47,9 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1289880232132099573" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1289880232132099442" resolveInfo="IHasDataType" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226265953242" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Lambda" />
@@ -83,6 +86,9 @@
       <property name="role" nameId="tpce.1071599776563" value="declaration" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2235017226265953243" resolveInfo="LambdaVariableDeclaration" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1289880232132099575" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1289880232132099442" resolveInfo="IHasDataType" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226265953245" nodeInfo="ig">
@@ -387,6 +393,9 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6407929488696668146" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ITypeContextProvider" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1289880232132099442" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IHasDataType" />
   </root>
 </model>
 
