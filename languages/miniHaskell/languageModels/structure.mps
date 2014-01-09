@@ -125,7 +125,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267344683" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Constructor" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267344684" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -142,8 +142,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267344686" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DataReference" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267412287" resolveInfo="TypeReference" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267805960" resolveInfo="ConcreteType" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267344687" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="declaration" />
@@ -154,7 +154,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267344688" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DataDeclaration" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="data" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226266877080" resolveInfo="Declaration" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267394789" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -176,24 +176,17 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267394657" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <property name="name" nameId="tpck.1169194664001" value="TypeParameter" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2235017226267394709" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267412287" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
-    <property name="name" nameId="tpck.1169194664001" value="TypeReference" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267805960" resolveInfo="ConcreteType" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267412288" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <property name="name" nameId="tpck.1169194664001" value="TypeParameterReference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267412287" resolveInfo="TypeReference" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267805960" resolveInfo="ConcreteType" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267412289" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="declaration" />
@@ -204,6 +197,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267437056" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CaseExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="case" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226265919936" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267437094" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -220,6 +214,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267437102" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CaseBranch" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267437103" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -241,10 +236,12 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="name" nameId="tpck.1169194664001" value="Pattern" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267437231" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="VariablePattern" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267437228" resolveInfo="Pattern" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267437234" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -255,6 +252,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267437238" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ConstructorPattern" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267437228" resolveInfo="Pattern" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267463234" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -271,6 +269,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267463197" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ConstructorReference" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267463198" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -283,14 +282,14 @@
     <property name="name" nameId="tpck.1169194664001" value="ConcreteType" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8343410428556354590" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8343410428556353411" resolveInfo="IType" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267805967" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <property name="name" nameId="tpck.1169194664001" value="TypeApplication" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267805960" resolveInfo="ConcreteType" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267805968" nodeInfo="ig">
@@ -308,6 +307,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2235017226267859273" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TypeAnnotatedExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226265919936" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2235017226267859329" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -344,6 +344,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5813829640768402492" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FunctionType" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2235017226267805960" resolveInfo="ConcreteType" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5813829640768402556" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -359,7 +360,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8343410428555802398" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <property name="name" nameId="tpck.1169194664001" value="PolymorphicType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8343410428555802598" nodeInfo="ig">
@@ -382,7 +383,7 @@
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8343410428556353411" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <property name="name" nameId="tpck.1169194664001" value="IType" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6407929488696230591" nodeInfo="ig">
@@ -393,9 +394,11 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6407929488696668146" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ITypeContextProvider" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1289880232132099442" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IHasDataType" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
   </root>
 </model>
 

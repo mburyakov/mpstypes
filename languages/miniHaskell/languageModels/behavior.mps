@@ -93,6 +93,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2235017226267510563" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="case" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="56yg.2235017226267437102" resolveInfo="CaseBranch" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2235017226267510564" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2235017226267510565" nodeInfo="sn" />
@@ -178,7 +179,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2235017226267768315" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="56yg.2235017226267344688" resolveInfo="DataDeclaration" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2235017226267768316" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2235017226267768317" nodeInfo="sn" />
@@ -448,7 +449,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8343410428556391214" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="56yg.8343410428555802398" resolveInfo="PolymorphicType" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8343410428556391366" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8343410428556391367" nodeInfo="sn" />
