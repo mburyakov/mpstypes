@@ -400,5 +400,30 @@
     <property name="name" nameId="tpck.1169194664001" value="IHasDataType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7299574230843519790" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
+    <property name="name" nameId="tpck.1169194664001" value="UnifiedTypeContextProvider" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7299574230843864460" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="elements" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7299574230843864457" resolveInfo="TypeContextProviderReference" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7299574230843519791" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6407929488696668146" resolveInfo="ITypeContextProvider" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7299574230843864457" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
+    <property name="name" nameId="tpck.1169194664001" value="TypeContextProviderReference" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7299574230843864458" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="role" nameId="tpce.1071599776563" value="provider" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6407929488696668146" resolveInfo="ITypeContextProvider" />
+    </node>
+  </root>
 </model>
 
