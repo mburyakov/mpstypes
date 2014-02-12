@@ -425,5 +425,19 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6407929488696668146" resolveInfo="ITypeContextProvider" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4698636011557940954" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
+    <property name="name" nameId="tpck.1169194664001" value="DependencyAspectType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4698636011558478560" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="dependencies" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2235017226265953245" resolveInfo="VariableReference" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4698636011557941092" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8343410428556353411" resolveInfo="IType" />
+    </node>
+  </root>
 </model>
 
