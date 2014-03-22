@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(sandbox)" doNotGenerate="true">
+<model modelUID="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(miniHaskell.sandbox)" doNotGenerate="true">
   <persistence version="8" />
   <language namespace="2614958c-fe48-4fdc-acc6-433d479dc710(miniHaskell)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />

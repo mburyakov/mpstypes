@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="typeSystem" uuid="f30a8604-e40e-4357-b485-c6c0d7b1c7e9" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="typeSystem" uuid="f30a8604-e40e-4357-b485-c6c0d7b1c7e9" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -16,7 +16,6 @@
     <dependency reexport="false">de1ad86d-6e50-4a02-b306-d4d17f64c375(jetbrains.mps.console.base)</dependency>
     <dependency reexport="false">ce5a0f58-7430-42db-a0f4-1620a3eecede(jetbrains.mps.lang.typesystem.pluginSolution)</dependency>
     <dependency reexport="false">2614958c-fe48-4fdc-acc6-433d479dc710(miniHaskell)</dependency>
-    <dependency reexport="false">710a7720-a77a-4648-b1b8-84e53137be91(sandbox)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
