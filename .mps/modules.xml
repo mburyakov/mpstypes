@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/baselanguage/sandbox/baseLanguage.sandbox.msd" folder="baseLanguage.types" />
       <modulePath path="$PROJECT_DIR$/languages/miniHaskell/miniHaskell.mpl" folder="miniHaskell" />
       <modulePath path="$PROJECT_DIR$/sandbox/sandbox.msd" folder="miniHaskell" />
       <modulePath path="$PROJECT_DIR$/solutions/javaTypes/javaTypes.msd" folder="baseLanguage.types" />
