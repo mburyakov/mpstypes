@@ -25,7 +25,6 @@
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
-  <import index="56yg" modelUID="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" version="-1" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <root type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="6407929488698491701" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Default" />
@@ -62,9 +61,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6407929488699346644" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6407929488699346647" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="type" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6407929488699346642" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="56yg.8343410428556353411" resolveInfo="IType" />
-            </node>
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6407929488699346642" nodeInfo="in" />
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6407929488699356715" nodeInfo="nn" />
           </node>
         </node>
