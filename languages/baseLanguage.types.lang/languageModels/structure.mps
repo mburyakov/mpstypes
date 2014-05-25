@@ -59,5 +59,9 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2557939717137125797" resolveInfo="Conversion" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="91964367383524846" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="DirectSupertype" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
+  </root>
 </model>
 
