@@ -20,6 +20,11 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="2557939717137149065" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+        <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="7026898775669169479" nodeInfo="ng">
+          <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="7026898775669171528" nodeInfo="ng">
+            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="zo2.2557939717137136803" resolveInfo="PrimitiveConversion" />
+          </node>
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2557939717138739854" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />

@@ -32,6 +32,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2557939717137136803" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="PrimitiveConversion" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137125797" resolveInfo="Conversion" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2557939717137136811" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -68,6 +70,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="91964367383524846" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DirectSupertype" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="supertype" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1343692794205329654" nodeInfo="ig">
@@ -78,6 +81,11 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7026898775665802057" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BoxingConversion" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="boxing" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7026898775669121492" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="UnboxingConversion" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unboxing" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
   </root>
 </model>
