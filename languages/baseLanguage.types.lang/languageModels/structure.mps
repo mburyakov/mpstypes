@@ -93,5 +93,18 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unchecked" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7026898775676686851" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IntegerConstantConversion" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="integerConstant" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7026898775676687311" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="minValue" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7026898775676687313" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="maxValue" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
 </model>
 
