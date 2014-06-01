@@ -88,5 +88,10 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unboxing" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7026898775672048876" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="UncheckedConversion" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unchecked" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2557939717137136803" resolveInfo="PrimitiveConversion" />
+  </root>
 </model>
 
