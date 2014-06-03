@@ -512,5 +512,9 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7026898775681642517" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="56yg.7328006678541386370" resolveInfo="TypeVariableReferenceAttribute" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="7026898775681704166" nodeInfo="ng" />
+  </root>
 </model>
 
