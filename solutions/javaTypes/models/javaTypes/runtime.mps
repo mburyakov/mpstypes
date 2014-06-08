@@ -8443,7 +8443,7 @@
         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7026898775670272178" nodeInfo="nn">
           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="bxzd.1343692794209519860" resolveInfo="OperationAspect" />
           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7026898775670272179" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="java.isWideningReferenceConversionWithUnchecked" />
+            <property name="value" nameId="tpee.1070475926801" value="java.wideningReferenceConversionWithUnchecked" />
           </node>
           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7026898775670272180" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580320021" value="2" />
