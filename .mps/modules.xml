@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/baseLanguage.types.lang/baseLanguage.types.lang.mpl" folder="baseLanguage.types" />
       <modulePath path="$PROJECT_DIR$/languages/miniHaskell/miniHaskell.mpl" folder="miniHaskell" />
       <modulePath path="$PROJECT_DIR$/sandbox/sandbox.msd" folder="miniHaskell" />
+      <modulePath path="$PROJECT_DIR$/solutions/console/console.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/javaTypes/javaTypes.msd" folder="baseLanguage.types" />
       <modulePath path="$PROJECT_DIR$/solutions/miniHaskell.types/miniHaskell.types.msd" folder="miniHaskell" />
       <modulePath path="$PROJECT_DIR$/solutions/typeSystem.plugin/typeSystem.plugin.msd" folder="" />
