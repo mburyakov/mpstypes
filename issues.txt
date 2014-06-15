@@ -1,0 +1,28 @@
+1. Efficiency problem. Won't fix.
+
+f0 = \x -> (x, x)
+f1 = \y -> f0 (f0 y)
+f2 = \y -> f1 (f1 y)
+f3 = \y -> f2 (f2 y)
+f4 = \y -> f3 (f3 y)
+etc.
+
+Typechecker hangs at types of size around f5.
+
+2. Error reporting.
+
+3. Monoid type aspects (e.g. in Haskell)
+
+4. Non-node types (do we really want it?)
+
+5. DSL
+
+6. "hole" type points (node doesn't exist, but we know its concept)
+
+7. Use rule annotations in canExecute(). Now we do not treat them uniformly.
+
+8. Find rules affecting single node / cross-root typechecking.
+
+9. Get rid of optional rules. Such rules should be cancelled some way or prevented from execution.
+
+10. Operation rule prioriries should can be declared separately. Same with typesystem rule (cancellation).
