@@ -26,3 +26,9 @@ Typechecker hangs at types of size around f5.
 9. Get rid of optional rules. Such rules should be cancelled some way or prevented from execution.
 
 10. Operation rule prioriries should can be declared separately. Same with typesystem rule (cancellation).
+
+11. Rules for ADTs: simple rule for data declaration & simple rule for constructor declaration (use different aspects).
+
+12. GADTs. Feature request.
+
+13. Rule should be able to cancel other rule or re-add some other rule to the queue.
