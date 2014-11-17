@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:6b1a5323-2ab1-47c2-9c06-0c788821d541(javaTypes.tests@tests)/1197897483042362297">
+    <nodeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="21" startPosition="44" endLine="22" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="22" startPosition="97" endLine="23" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1197897483042450335" fileName="Conversions_Test.java" startLine="28" startPosition="46" endLine="29" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1197897483042365625" fileName="Conversions_Test.java" startLine="32" startPosition="114" endLine="33" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1197897483042365648" fileName="Conversions_Test.java" startLine="35" startPosition="41" endLine="36" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1197897483042365650" fileName="Conversions_Test.java" startLine="38" startPosition="9" endLine="39" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
+    <nodeInfo nodeId="1197897483042449811" fileName="Conversions_Test.java" startLine="28" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="test_test#()V" />
+    <nodeInfo nodeId="1197897483042365644" fileName="Conversions_Test.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTypeStore#()LtypeSystem/runtime/TypeStore;" />
+    <nodeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="20" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="test_test#()V" />
+    <nodeInfo nodeId="1197897483042365632" fileName="Conversions_Test.java" startLine="33" startPosition="73" endLine="38" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="32" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="testConversion#(LtypeSystem/runtime/OperationAspect;Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="1197897483042449811" fileName="Conversions_Test.java" startLine="28" startPosition="46" endLine="29" endPosition="41" />
+    <scopeInfo nodeId="1197897483042365647" fileName="Conversions_Test.java" startLine="35" startPosition="41" endLine="36" endPosition="27" />
+    <scopeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="21" startPosition="44" endLine="23" endPosition="81" />
+    <scopeInfo nodeId="1197897483042449811" fileName="Conversions_Test.java" startLine="28" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="1197897483042365644" fileName="Conversions_Test.java" startLine="35" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="20" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="32" startPosition="114" endLine="39" endPosition="57">
+      <varInfo nodeId="1197897483042365633" varName="conversion" />
+      <varInfo nodeId="1197897483042365626" varName="typeStore" />
+    </scopeInfo>
+    <scopeInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="32" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="1197897483042365659" varName="arguments" />
+      <varInfo nodeId="1197897483042365655" varName="aspect" />
+      <varInfo nodeId="1197897483042365662" varName="result" />
+    </scopeInfo>
+    <unitInfo nodeId="1197897483042365642" fileName="Conversions_Test.java" startLine="34" startPosition="93" endLine="38" endPosition="7" unitName="javaTypes.tests.Conversions_Test$1" />
+    <unitInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="26" startPosition="0" endLine="42" endPosition="0" unitName="javaTypes.tests.Conversions_Test$TestBody" />
+    <unitInfo nodeId="1197897483042362297" fileName="Conversions_Test.java" startLine="18" startPosition="0" endLine="43" endPosition="0" unitName="javaTypes.tests.Conversions_Test" />
+  </root>
+</debugInfo>
+
