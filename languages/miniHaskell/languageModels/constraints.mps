@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1bbd6cf9-e8d6-4a6b-8953-011d5caa4fe2(miniHaskell.constraints)">
-  <persistence version="8" />
-  <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
-  <import index="56yg" modelUID="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" version="-1" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2235017226266868979" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="56yg.2235017226265953243" resolveInfo="LambdaVariableDeclaration" />
-    <node role="defaultScope" roleId="tp1t.1213101058038" type="tp1t.NodeDefaultSearchScope" typeId="tp1t.1159285995602" id="1939359156214114492" nodeInfo="ng">
-      <node role="searchScopeFactory" roleId="tp1t.1159286114227" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="1939359156214114496" nodeInfo="ng">
-        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.2235017226265953243" resolveInfo="LambdaVariableDeclaration" />
+<model ref="r:1bbd6cf9-e8d6-4a6b-8953-011d5caa4fe2(miniHaskell.constraints)" concise="true">
+  <persistence version="9" />
+  <languages>
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="tp1t" ref="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" implicit="true" />
+    <import index="56yg" ref="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+    <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
+        <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213101058038" name="defaultScope" index="1MtirG" />
+      </concept>
+      <concept id="1159285995602" name="jetbrains.mps.lang.constraints.structure.NodeDefaultSearchScope" flags="ng" index="3EP7_v">
+        <child id="1159286114227" name="searchScopeFactory" index="3EP$qY" />
+      </concept>
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1M2fIO" id="1W4o5duwZNN">
+    <ref role="1M2myG" to="56yg:1W4o5dutwfr" resolve="LambdaVariableDeclaration" />
+    <node concept="3EP7_v" id="1FDZe2u2MyW" role="1MtirG">
+      <node concept="1dDu$B" id="1FDZe2u2Mz0" role="3EP$qY">
+        <ref role="1dDu$A" to="56yg:1W4o5dutwfr" resolve="LambdaVariableDeclaration" />
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1939359156214114565" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="56yg.2235017226267394657" resolveInfo="TypeParameter" />
-    <node role="defaultScope" roleId="tp1t.1213101058038" type="tp1t.NodeDefaultSearchScope" typeId="tp1t.1159285995602" id="1939359156214114566" nodeInfo="ng">
-      <node role="searchScopeFactory" roleId="tp1t.1159286114227" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="1939359156214114570" nodeInfo="ng">
-        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.2235017226267394657" resolveInfo="TypeParameter" />
+  </node>
+  <node concept="1M2fIO" id="1FDZe2u2M$5">
+    <property role="3GE5qa" value="type" />
+    <ref role="1M2myG" to="56yg:1W4o5duz09x" resolve="TypeParameter" />
+    <node concept="3EP7_v" id="1FDZe2u2M$6" role="1MtirG">
+      <node concept="1dDu$B" id="1FDZe2u2M$a" role="3EP$qY">
+        <ref role="1dDu$A" to="56yg:1W4o5duz09x" resolve="TypeParameter" />
       </node>
     </node>
-  </root>
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1939359156214119063" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="56yg.6407929488696230591" resolveInfo="IVariableDeclaration" />
-    <node role="defaultScope" roleId="tp1t.1213101058038" type="tp1t.NodeDefaultSearchScope" typeId="tp1t.1159285995602" id="1939359156214119064" nodeInfo="ng">
-      <node role="searchScopeFactory" roleId="tp1t.1159286114227" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="1939359156214119068" nodeInfo="ng">
-        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="56yg.6407929488696230591" resolveInfo="IVariableDeclaration" />
+  </node>
+  <node concept="1M2fIO" id="1FDZe2u2NEn">
+    <ref role="1M2myG" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
+    <node concept="3EP7_v" id="1FDZe2u2NEo" role="1MtirG">
+      <node concept="1dDu$B" id="1FDZe2u2NEs" role="3EP$qY">
+        <ref role="1dDu$A" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
       </node>
     </node>
-  </root>
+  </node>
 </model>
 
