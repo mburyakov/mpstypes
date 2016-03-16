@@ -11,8 +11,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/miniHaskell.types/miniHaskell.types.msd" folder="miniHaskell" />
       <modulePath path="$PROJECT_DIR$/solutions/typeSystem.plugin/typeSystem.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/typeSystem/typeSystem.msd" folder="" />
-      <modulePath path="C:/github/editor2PDF/languages/org.campagnelab.mps.editor2pdf/org.campagnelab.mps.editor2pdf.mpl" folder="" />
-      <modulePath path="C:/github/editor2PDF/solutions/com.itext/com.itext.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../editor2PDF/languages/org.campagnelab.mps.editor2pdf/org.campagnelab.mps.editor2pdf.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/../editor2PDF/solutions/com.itext/com.itext.msd" folder="" />
     </projectModules>
   </component>
 </project>

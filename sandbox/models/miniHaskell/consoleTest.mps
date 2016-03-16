@@ -3,19 +3,20 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="-1" />
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.console.blCommand" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="0" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
   </languages>
   <imports>
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="alql" ref="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(miniHaskell.sandbox)" />
     <import index="pava" ref="r:de86ca50-2ffb-4e76-98f6-c107a708f167(miniHaskell.types)" />
     <import index="bxzd" ref="r:07f3a687-d49b-4e85-9773-22d2308b4619(typeSystem.runtime)" />
     <import index="56yg" ref="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -152,15 +153,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.console.blCommand">
-      <concept id="7820875636626932768" name="jetbrains.mps.console.blCommand.structure.AbstractPrintExpression" flags="ng" index="5bD3k">
-        <child id="8365379837260461921" name="object" index="2v23J2" />
-      </concept>
-      <concept id="7600370246417552247" name="jetbrains.mps.console.blCommand.structure.PrintExpression" flags="ng" index="ikQcf" />
-      <concept id="5464054275389846505" name="jetbrains.mps.console.blCommand.structure.BLCommand" flags="ng" index="2HLcI0">
-        <child id="1769790395579689573" name="body" index="3RSQip" />
-      </concept>
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -171,6 +163,15 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
+    </language>
+    <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
+      <concept id="7820875636626932768" name="jetbrains.mps.console.base.structure.AbstractPrintExpression" flags="ng" index="5bD3k">
+        <child id="8365379837260461921" name="object" index="2v23J2" />
+      </concept>
+      <concept id="7600370246417552247" name="jetbrains.mps.console.base.structure.PrintExpression" flags="ng" index="ikQcf" />
+      <concept id="5464054275389846505" name="jetbrains.mps.console.base.structure.BLCommand" flags="ng" index="2HLcI0">
+        <child id="1769790395579689573" name="body" index="3RSQip" />
+      </concept>
     </language>
   </registry>
   <node concept="1MOzCq" id="2WeX43Rubap">
@@ -248,7 +249,7 @@
                           </node>
                           <node concept="2ZW3vV" id="2WeX43Ruaon" role="3clFbw">
                             <node concept="3uibUv" id="2WeX43Ruaoo" role="2ZW6by">
-                              <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+                              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                             </node>
                             <node concept="2GrUjf" id="2WeX43Ruaop" role="2ZW6bz">
                               <ref role="2Gs0qQ" node="2WeX43Ruaoa" resolve="m" />
@@ -327,7 +328,7 @@
                 <node concept="3cpWsn" id="2WeX43RuaoP" role="TDEfY">
                   <property role="TrG5h" value="e" />
                   <node concept="3uibUv" id="2WeX43RuaoQ" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~Throwable" resolve="Throwable" />
+                    <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="2WeX43RuaoR" role="TDEfX">
@@ -362,7 +363,7 @@
                         </node>
                         <node concept="2ZW3vV" id="2WeX43Ruap6" role="3clFbw">
                           <node concept="3uibUv" id="2WeX43Ruap7" role="2ZW6by">
-                            <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                           </node>
                           <node concept="2GrUjf" id="2WeX43Ruap8" role="2ZW6bz">
                             <ref role="2Gs0qQ" node="2WeX43RuaoT" resolve="m" />
@@ -472,7 +473,7 @@
                   </node>
                   <node concept="2ZW3vV" id="2WeX43Ryq3o" role="3clFbw">
                     <node concept="3uibUv" id="2WeX43Ryq3p" role="2ZW6by">
-                      <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                     </node>
                     <node concept="2GrUjf" id="2WeX43Ryq3q" role="2ZW6bz">
                       <ref role="2Gs0qQ" node="2WeX43Ryq3b" resolve="m" />

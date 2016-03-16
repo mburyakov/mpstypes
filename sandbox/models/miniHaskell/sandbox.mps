@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(miniHaskell.sandbox)" doNotGenerate="true" concise="true">
+<model ref="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(miniHaskell.sandbox)" doNotGenerate="true">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell" version="-1" />
+    <use id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell" version="0" />
   </languages>
-  <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="56yg" ref="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
     <language id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell">
       <concept id="5813829640768402492" name="miniHaskell.structure.FunctionType" flags="ng" index="a3uHX">
         <child id="5813829640768402556" name="from" index="a3uGX" />
@@ -87,6 +80,11 @@
       <concept id="2235017226267859273" name="miniHaskell.structure.TypeAnnotatedExpression" flags="ng" index="11_R$q">
         <child id="2235017226267859331" name="type" index="11_RBg" />
         <child id="2235017226267859329" name="expression" index="11_RBi" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>

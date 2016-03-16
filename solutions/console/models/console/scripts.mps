@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:61af5041-433b-47e4-8cdb-3dd4605951fe(console.scripts)" concise="true">
+<model ref="r:61af5041-433b-47e4-8cdb-3dd4605951fe(console.scripts)">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="-1" />
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.console.blCommand" version="-1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
-    <use id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="0" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
   </languages>
   <imports>
     <import index="56yg" ref="r:10b7cddd-bf35-4159-82c9-f866f88f389a(miniHaskell.structure)" />
     <import index="alql" ref="r:f4741800-2bf5-4cdc-b3f9-73b685b5c9e7(miniHaskell.sandbox)" />
-    <import index="z2sp" ref="r:e712f353-5c3c-4288-adce-87c956a52ffb(jetbrains.mps.console.scripts.structure)" implicit="true" />
-    <import index="3xdn" ref="r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.console.blCommand.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="tp3r" ref="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
     <language id="2614958c-fe48-4fdc-acc6-433d479dc710" name="miniHaskell">
       <concept id="5813829640768402492" name="miniHaskell.structure.FunctionType" flags="ng" index="a3uHX">
         <child id="5813829640768402556" name="from" index="a3uGX" />
@@ -38,14 +46,6 @@
       <concept id="2235017226267805967" name="miniHaskell.structure.TypeApplication" flags="ng" index="11_y_s">
         <child id="2235017226267805970" name="argument" index="11_y_1" />
         <child id="2235017226267805968" name="function" index="11_y_3" />
-      </concept>
-    </language>
-    <language id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts">
-      <concept id="1734392475491228778" name="jetbrains.mps.console.scripts.structure.Execute" flags="ng" index="1MOx2I">
-        <reference id="1734392475491228779" name="script" index="1MOx2J" />
-      </concept>
-      <concept id="1734392475491235550" name="jetbrains.mps.console.scripts.structure.ConsoleScript" flags="ng" index="1MOzCq">
-        <child id="1734392475491235551" name="command" index="1MOzCr" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -76,6 +76,14 @@
         <reference id="8182547171709614741" name="target" index="36bGnp" />
       </concept>
     </language>
+    <language id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts">
+      <concept id="1734392475491228778" name="jetbrains.mps.console.scripts.structure.Execute" flags="ng" index="1MOx2I">
+        <reference id="1734392475491228779" name="script" index="1MOx2J" />
+      </concept>
+      <concept id="1734392475491235550" name="jetbrains.mps.console.scripts.structure.ConsoleScript" flags="ng" index="1MOzCq">
+        <child id="1734392475491235551" name="command" index="1MOzCr" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -84,27 +92,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.console.blCommand">
-      <concept id="5464054275389846505" name="jetbrains.mps.console.blCommand.structure.BLCommand" flags="ng" index="2HLcI0">
-        <child id="1769790395579689573" name="body" index="3RSQip" />
-      </concept>
-      <concept id="7820875636626932768" name="jetbrains.mps.console.blCommand.structure.AbstractPrintExpression" flags="ng" index="5bD3k">
+    <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
+      <concept id="7820875636626932768" name="jetbrains.mps.console.base.structure.AbstractPrintExpression" flags="ng" index="5bD3k">
         <child id="8365379837260461921" name="object" index="2v23J2" />
       </concept>
-      <concept id="7656298970878093785" name="jetbrains.mps.console.blCommand.structure.BLExpression" flags="ng" index="f80E0">
+      <concept id="7656298970878093785" name="jetbrains.mps.console.base.structure.BLExpression" flags="ng" index="f80E0">
         <child id="7656298970878093890" name="expression" index="f80$r" />
       </concept>
-      <concept id="7600370246417552247" name="jetbrains.mps.console.blCommand.structure.PrintExpression" flags="ng" index="ikQcf" />
-    </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
+      <concept id="7600370246417552247" name="jetbrains.mps.console.base.structure.PrintExpression" flags="ng" index="ikQcf" />
+      <concept id="5464054275389846505" name="jetbrains.mps.console.base.structure.BLCommand" flags="ng" index="2HLcI0">
+        <child id="1769790395579689573" name="body" index="3RSQip" />
       </concept>
     </language>
   </registry>
