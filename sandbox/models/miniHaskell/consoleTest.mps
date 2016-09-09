@@ -4,8 +4,8 @@
   <attribute name="concise" value="true" />
   <languages>
     <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="0" />
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -131,6 +131,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="597763930871270009" name="jetbrains.mps.lang.smodel.structure.ChildNodeRefExpression" flags="nn" index="3fl2lp">
         <reference id="597763930871272016" name="targetNode" index="3fl3PK" />
         <child id="597763930871272014" name="parent" index="3fl3PI" />
@@ -140,8 +144,6 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
@@ -300,8 +302,8 @@
                     <node concept="2OqwBi" id="2WeX43RuaoF" role="2Oq$k0">
                       <node concept="1PxgMI" id="2WeX43RuaoG" role="2Oq$k0">
                         <property role="1BlNFB" value="true" />
-                        <ref role="1PxNhF" to="56yg:7f9JThpmVsu" resolve="PolymorphicType" />
-                        <node concept="2OqwBi" id="2WeX43RuaoH" role="1PxMeX">
+                        <ref role="1m5ApE" to="56yg:7f9JThpmVsu" resolve="PolymorphicType" />
+                        <node concept="2OqwBi" id="2WeX43RuaoH" role="1m5AlR">
                           <node concept="37vLTw" id="2WeX43RuaoI" role="2Oq$k0">
                             <ref role="3cqZAo" node="2WeX43RuanR" resolve="typeStore" />
                           </node>
@@ -317,7 +319,7 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="2WeX43RuaoM" role="2OqNvi">
-                        <ref role="3TtcxE" to="56yg:7f9JThpmVvA" />
+                        <ref role="3TtcxE" to="56yg:7f9JThpmVvA" resolve="variables" />
                       </node>
                     </node>
                     <node concept="3GX2aA" id="2WeX43RuaoN" role="2OqNvi" />

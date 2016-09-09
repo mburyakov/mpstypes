@@ -100,6 +100,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -120,8 +124,6 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -508,8 +510,8 @@
                             <node concept="3clFbF" id="5zHyuHnwrZM" role="3cqZAp">
                               <node concept="1PxgMI" id="5zHyuHnwsBe" role="3clFbG">
                                 <property role="1BlNFB" value="true" />
-                                <ref role="1PxNhF" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
-                                <node concept="37vLTw" id="5zHyuHnwrZL" role="1PxMeX">
+                                <ref role="1m5ApE" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
+                                <node concept="37vLTw" id="5zHyuHnwrZL" role="1m5AlR">
                                   <ref role="3cqZAo" node="5zHyuHnwpe1" resolve="it" />
                                 </node>
                               </node>

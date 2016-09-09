@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -74,7 +74,7 @@
   <node concept="24kQdi" id="2dZC9V4OENc">
     <ref role="1XX52x" to="zo2:2dZC9V4OEMO" resolve="CompositeConversion" />
     <node concept="3F2HdR" id="2dZC9V4OEOe" role="2wV5jI">
-      <ref role="1NtTu8" to="zo2:2dZC9V4OENe" />
+      <ref role="1NtTu8" to="zo2:2dZC9V4OENe" resolve="element" />
       <node concept="2iRkQZ" id="2dZC9V4OEOf" role="2czzBx" />
     </node>
   </node>
@@ -82,7 +82,7 @@
     <ref role="1XX52x" to="zo2:664zNjkPx83" resolve="IntegerConstantConversion" />
     <node concept="3EZMnI" id="664zNjkPLbz" role="2wV5jI">
       <node concept="3F1sOY" id="664zNjkPLb$" role="3EZMnx">
-        <ref role="1NtTu8" to="zo2:2dZC9V4OBMF" />
+        <ref role="1NtTu8" to="zo2:2dZC9V4OBMF" resolve="from" />
       </node>
       <node concept="3F0ifn" id="664zNjkPLb_" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -135,7 +135,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="664zNjkPLbG" role="3EZMnx">
-        <ref role="1NtTu8" to="zo2:2dZC9V4OBM$" />
+        <ref role="1NtTu8" to="zo2:2dZC9V4OBM$" resolve="to" />
       </node>
       <node concept="2iRfu4" id="664zNjkPLbH" role="2iSdaV" />
     </node>
@@ -145,7 +145,7 @@
     <ref role="1XX52x" to="zo2:2dZC9V4OBMz" resolve="PrimitiveConversion" />
     <node concept="3EZMnI" id="664zNjkPL4p" role="2wV5jI">
       <node concept="3F1sOY" id="664zNjkPL4q" role="3EZMnx">
-        <ref role="1NtTu8" to="zo2:2dZC9V4OBMF" />
+        <ref role="1NtTu8" to="zo2:2dZC9V4OBMF" resolve="from" />
       </node>
       <node concept="3F0ifn" id="664zNjkPL4r" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -168,7 +168,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="664zNjkPL4y" role="3EZMnx">
-        <ref role="1NtTu8" to="zo2:2dZC9V4OBM$" />
+        <ref role="1NtTu8" to="zo2:2dZC9V4OBM$" resolve="to" />
       </node>
       <node concept="2iRfu4" id="664zNjkPL4z" role="2iSdaV" />
     </node>
