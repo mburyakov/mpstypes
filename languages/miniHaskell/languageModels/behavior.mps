@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -101,8 +101,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
@@ -510,9 +510,11 @@
                             <node concept="3clFbF" id="5zHyuHnwrZM" role="3cqZAp">
                               <node concept="1PxgMI" id="5zHyuHnwsBe" role="3clFbG">
                                 <property role="1BlNFB" value="true" />
-                                <ref role="1m5ApE" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
                                 <node concept="37vLTw" id="5zHyuHnwrZL" role="1m5AlR">
                                   <ref role="3cqZAo" node="5zHyuHnwpe1" resolve="it" />
+                                </node>
+                                <node concept="chp4Y" id="4nGzd_XeeB_" role="3oSUPX">
+                                  <ref role="cht4Q" to="56yg:5zHyuHnvkaZ" resolve="IVariableDeclaration" />
                                 </node>
                               </node>
                             </node>
