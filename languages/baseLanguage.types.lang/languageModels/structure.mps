@@ -6,7 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -57,8 +57,8 @@
       <property role="20kJfa" value="upperbound" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="91964367387932823" />
-      <ref role="20lvS9" to="tpck:hYa1RjM" resolve="IType" />
       <ref role="20ksaX" to="tpee:hFztrQw" resolve="bound" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="2dZC9V4O_6_">
